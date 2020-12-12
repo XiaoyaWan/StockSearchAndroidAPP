@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="20dp"
+    android:elevation="10dp"
+    android:text="button"
+    android:textColor="#000"
+    android:background="@drawable/rounded_corners"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/news_first_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/no_image"
+        android:background="@drawable/rounded_corners_without_border"
+        app:layout_constraintBottom_toTopOf="@+id/news_first_group"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="2"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:id="@+id/news_first_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/news_first_image"
+        app:layout_constraintVertical_weight="1">
+
+        <LinearLayout
+            android:id="@+id/news_first_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/news_first_publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="5dp"
+                android:maxLines="1"
+                android:textColor="@color/subGray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/news_first_date"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/subGray"
+                android:text="111111111111" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/news_first_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
