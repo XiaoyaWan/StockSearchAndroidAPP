@@ -4,9 +4,18 @@ Developed by Android Studio; Backend: Node.js; Deployed on AWS.
 ## 1 App Icon and Splash Screen
 This image is also the app icon as shown in Figure 1. The app begins with a welcome Splash Screen (Figure 1).
 
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure1.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure2.png?raw=true)
+
 Figure 1: App Icon Figure 2: Splash Screen
+
 ## 2 Home screen
 When you open the app, there will be an initial spinner while the data is being fetched using volley as shown in Figure 3. The home screen will have a toolbar at the top with Stocks title and the search icon. Below that, it will show the current date as shown in Figure 3. 
+
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure3.1.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure3.2.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure3.3.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure3.4.png?raw=true)
 
 Figure 3: Home screen
 
@@ -35,6 +44,8 @@ The home screen has been implemented by using a RecyclerView with the SectionedR
 
 ### 2.1 Search Functionality
 
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure4.png?raw=true)
+
 Figure 4: Search Functionality
 
 - On top right side, there will be a search button which opens a textbox where the user can enter a keyword to search for a stock symbol.
@@ -60,11 +71,12 @@ The Portfolio section allows the user to trade the shares of the stock. It conta
 
 If the user does not own any shares of the given stock, the left section will have the message as shown in Figure 7, else the left section will look like Figure 6.
 
-Figure 5: Detailed Screen
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure5.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure6.png?raw=true)
 
-Figure 4: Loading Screen
+Figure 5: Loading Screen    Figure 6: Detailed Screen Figure
 
-Figure 6: Detailed Screen
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure7.png?raw=true)
 
 Figure 7: Portfolio section
 
@@ -72,18 +84,34 @@ The Stats section displays the trading statistics for the given stock in a grid.
 
 The About section displays the description of the company. If the description is longer than 2 lines, ellipsize the end of the 2nd line and display a ‘Show more…’ button. On clicking this button, the complete description becomes visible and the button text changes to ‘Show less’.(Figure 8) If the description is less than 2 lines, do not display the button.
 
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure8.png?raw=true)
+
 Figure 8: About section
 
 The News section displays the news articles related to the given stock symbol. The first article has a different format/layout than the rest of the articles in the list. On clicking the news article, the original article is opened in chrome using the article URL. On long press, a dialog box opens with options to share on twitter and open in chrome. (Figure 9) For each article, the information displayed is Article source, Article title, Article image and the time ago when the article was published. The time ago supports ‘days ago’ and ‘minutes ago’ by calculating the difference
 between the timestamp the article was published and the current timestamp.
 The news section uses RecyclerView and ArticleDialog elements.
 
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure9.1.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure9.2.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure9.3.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure9.4.png?raw=true)
+
 Figure 9: News section
 
 From every twitter button, on clicking the button, the article will be shared by opening a
 browser with Twitter Intent.
 
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure10.1.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure10.2.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure10.3.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure10.4.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure10.5.png?raw=true)
+
 Figure 10: Trade Dialog
+
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure11.1.png?raw=true)
+![alt text](https://github.com/XiaoyaWan/StockSearchAndroidAPP/blob/main/ReadmeImage/Figure11.2.png?raw=true)
 
 Figure 11: Trade Success Message
 
